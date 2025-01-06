@@ -1,0 +1,3 @@
+<?php
+// Nou arxiu php
+?>
