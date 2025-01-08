@@ -3,7 +3,15 @@
 require_once('Connexio.php');
 class Eliminar {
     
-    // Método para eliminar un producto de la base de datos
+    /**
+     * Elimina un producte de la base de dades.
+     *
+     * Aquest mètode s'encarrega d'eliminar un producte de la base de dades
+     * utilitzant l'identificador únic del producte.
+     *
+     * @param int $id L'identificador únic del producte a eliminar.
+     * @return void
+     */
     public function eliminar($id) {
         // Verifica si el ID del producto es válido
         if (!isset($id) || !is_numeric($id)) {
