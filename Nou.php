@@ -1,6 +1,15 @@
 <?php
 require_once('Connexio.php');
-class Nou {
+class Nou {    
+    /**
+     * Afegeix un producte nou a la llista de productes
+     *
+    * @param  string $nom El nom del producte
+    * @param  string $descripcio La descripció del producte
+    * @param  float $preu El preu del producte
+    * @param  int $categoria La categoria del producte
+     * @return void
+     */
     public function afegirProducte($nom, $descripcio, $preu, $categoria) {
         // 
         if (!isset($nom) || !isset($descripcio) || !isset($preu) || !isset($categoria)) {
@@ -28,7 +37,12 @@ class Nou {
         $conexion->close();
     }
 }
-// 
+/**
+ * Aquesta funció obté les categories disponibles des de la base de dades.
+ * No pren cap paràmetre i retorna un array amb les categories.
+ *
+ * @return array Un array amb les categories disponibles.
+ */
 function obtenirCategories() {
     $conexionObj = new Connexio();
     $conexion = $conexionObj->obtenirConnexio();
@@ -40,11 +54,10 @@ function obtenirCategories() {
             $categories[$fila['id']] = $fila['nom'];
         }
     }
-    //
     $conexion->close();
     return $categories;
 }
-//
+//Enviar dades per http
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Obtener los valores del formulario
     $nom = isset($_POST['nom']) ? $_POST['nom'] : null;
@@ -55,7 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nouProducte = new Nou();
     $nouProducte->afegirProducte($nom, $descripcio, $preu, $categoria);
 }
-// 
 $categorias = obtenirCategories();
 ?>
 <!DOCTYPE html>
@@ -64,7 +76,6 @@ $categorias = obtenirCategories();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Nuevo Producto</title>
-        <!--  -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     </head>
     <body>
