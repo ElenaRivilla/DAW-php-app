@@ -41,6 +41,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Connexio.html#property_baseDatos"
         },                {
+            "fqsen": "\\Eliminar",
+            "name": "Eliminar",
+            "summary": "",
+            "url": "classes/Eliminar.html"
+        },                {
+            "fqsen": "\\Eliminar\u003A\u003Aeliminar\u0028\u0029",
+            "name": "eliminar",
+            "summary": "Elimina\u0020un\u0020producte\u0020de\u0020la\u0020base\u0020de\u0020dades.",
+            "url": "classes/Eliminar.html#method_eliminar"
+        },                {
             "fqsen": "\\Footer",
             "name": "Footer",
             "summary": "Classe\u0020Footer",
@@ -70,6 +80,21 @@ Search.appendIndex(
             "name": "mostrarFormulari",
             "summary": "M\u00E8tode\u0020per\u0020mostrar\u0020el\u0020formulari\u0020de\u0020modificaci\u00F3\u0020del\u0020producte",
             "url": "classes/Modificar.html#method_mostrarFormulari"
+        },                {
+            "fqsen": "\\obtenirCategories\u0028\u0029",
+            "name": "obtenirCategories",
+            "summary": "Aquesta\u0020funci\u00F3\u0020obt\u00E9\u0020les\u0020categories\u0020disponibles\u0020des\u0020de\u0020la\u0020base\u0020de\u0020dades.",
+            "url": "namespaces/default.html#function_obtenirCategories"
+        },                {
+            "fqsen": "\\Nou",
+            "name": "Nou",
+            "summary": "",
+            "url": "classes/Nou.html"
+        },                {
+            "fqsen": "\\Nou\u003A\u003AafegirProducte\u0028\u0029",
+            "name": "afegirProducte",
+            "summary": "Afegeix\u0020un\u0020producte\u0020nou\u0020a\u0020la\u0020llista\u0020de\u0020productes",
+            "url": "classes/Nou.html#method_afegirProducte"
         },                {
             "fqsen": "\\Principal",
             "name": "Principal",
